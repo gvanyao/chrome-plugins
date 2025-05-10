@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Bilibili视频下载器",
+  "version": "1.0",
+  "description": "一键下载Bilibili视频",
+  "permissions": ["downloads", "scripting", "activeTab"],
+  "host_permissions": ["https://www.bilibili.com/video/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.bilibili.com/video/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_title": "B站下载"
+  }
+}
