@@ -63,7 +63,7 @@ async function fetchMediaUrls() {
             }
         }
     } catch (e) {
-        console.error('failed to parsed videos', e);
+        console.error('failed to parsed videos, caused by: ', e);
     }
     return null;
 }
