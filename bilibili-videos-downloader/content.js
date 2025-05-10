@@ -63,7 +63,7 @@ async function fetchMediaUrls() {
             }
         }
     } catch (e) {
-        console.error('解析视频信息失败', e);
+        console.error('failed to parsed videos', e);
     }
     return null;
 }
